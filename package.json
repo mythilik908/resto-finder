@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.8"
+  },
+  "name": "project3",
+  "version": "1.0.0",
+  "main": "yelp.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

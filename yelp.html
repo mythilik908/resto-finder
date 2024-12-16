@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Find Restaurants on Yelp</title>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="yelp.js"></script>
+</head>
+
+<body onload="initialize();" style="display:flex; flex-direction:column; align-items:center;">
+  <img src="sidepaper.svg" alt="restaurant" style="position:absolute;margin-left: 1050px;width: 720px;height: 1000px;">
+  <img src="design.svg" alt="restaurant"
+    style="width: 150px; height: 150px;position:absolute;margin-left: -500px;margin-top: 50px;">
+  <img src="rest.svg" alt="restaurant" style="width: 150px; height: 150px;position: relative">
+  <img src="design.svg" alt="restaurant"
+    style="width: 150px; height: 150px;margin-left: 500px;position:absolute;margin-top: 50px;">
+  <p
+    style="font-weight: 600;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    We provide the best food for you</p>
+  <h2> Restaurant Finder </h2>
+  <div style="align-items: center;">
+    <form>
+      <label style="font-weight: 600;">Search Term: <input type="text" id="searchTerm"
+          style="background-color: rgb(255 77 5);border: none;height: 30px;border-radius: 10px;color: white;padding: 2px;" /></label>
+      <label style="font-weight: 600;">Level:
+        <select id="level" style="font-weight: 600;">
+          <option>5</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+        </select>
+        <input type="button" onclick="findRestaurants();"
+          style="border:none;background-color: rgb(255 77 5);border-radius: 8px;width: 80px;height: 25px;font-weight: 600;color: white;"
+          value="Find" />
+    </form>
+  </div>
+
+  <hr>
+  <div id="map" style="width: 800px; height: 500px;border-radius: 10px;margin-top: 30px;"></div>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAquLhT1xZitMroBLDZUYIQJE6YuYIyVas&loading=async&callback=initMap&libraries=marker,geometry">
+    </script>
+
+  <div id="output">&nbsp;</div>
+</body>
+
+</html>
